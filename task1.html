@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Webpage</title>
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9;
+      color: #333;
+      margin: 40px;
+    }
+    h1 {
+      color: #00796b;
+      text-align: center;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 30%;
+    }
+    a {
+      color: #388e3c;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Safari World</h1>
+  <p>Safari World is a vibrant destination where adventure meets wonder, offering visitors the chance to experience untamed nature up close. Journey through sprawling landscapes filled with majestic animals like lions, giraffes, and zebras roaming freely in their natural habitat. The park also features lush greenery, interactive exhibits, and thrilling safari rides that bring the excitement of the wild to life. Whether observing exotic wildlife, exploring beautiful gardens, or enjoying entertaining shows, Safari World promises a memorable adventure for all ages.</p>
+
+  <img src="safari.png" alt="Safari">
+  <a href="https://thesafariworldbangkok.com/?gad_source=1&gad_campaignid=21903471283&gbraid=0AAAAA-e_gKj1LHBgt4BcchwAaqth8CcC6&gclid=CjwKCAjw7fzDBhA7EiwAOqJkhyNyQXG6_Raor2NLZWaLL6eLhpLTwo1H2u8Q52fSqaAFCUeuOwFDYhoCDbMQAvD_BwE" target="_blank">SAFARI wORLD e-TICKETS</a>
+
+  <button id="alertBtn">Click Me!</button>
+
+  <!-- Internal JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const button = document.getElementById('alertBtn');
+      button.addEventListener('click', function() {
+        alert('Hello! This is Safari World.');
+      });
+    });
+  </script>
+</body>
+</html>
